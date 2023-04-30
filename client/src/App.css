@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;800&family=Poppins:ital,wght@1,200&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 5%;
+  padding: 5%;
+  width: 1000px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.select_h3 {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 40px;
+}
+
+.select_section {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.select_section select {
+  width: 100px;
+  height: 43px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.select_section button {
+  width: 200px;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 30px;
+  height: 46px;
+  border: 3px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f1efcd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.select_section button:hover {
+  color: #ffffff;
+  background-color: rgb(38, 99, 79);
+}
+
+.left-side {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.right-side {
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.square button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  position: relative;
+}
+
+.strike {
+  position: absolute;
+  background-color: darkred;
+}
+
+.strike-row-1 {
+  width: 99%;
+  height: 4px;
+  top: 12%;
+}
+
+.strike-row-2 {
+  width: 99%;
+  height: 4px;
+  top: 37%;
+}
+
+.strike-row-3 {
+  width: 99%;
+  height: 4px;
+  top: 62%;
+}
+
+.strike-column-1 {
+  width: 4px;
+  height: 75%;
+  left: 16%;
+}
+
+.strike-column-2 {
+  width: 4px;
+  height: 75%;
+  left: 49%;
+}
+
+.strike-column-3 {
+  width: 4px;
+  height: 75%;
+  left: 83%;
+}
+
+.strike-diagonal-1 {
+  width: 95%;
+  height: 4px;
+  top: 37%;
+  left: 3%;
+  transform: skewY(45deg);
+}
+
+.strike-diagonal-2 {
+  width: 95%;
+  height: 4px;
+  top: 37%;
+  left: 3%;
+  transform: skewY(-45deg);
+}
+
+.borderRightBottom {
+  border-right: 5px solid rgb(126, 51, 126);
+  border-bottom: 5px solid rgb(126, 51, 126);
+}
+
+.borderBottom {
+  border-bottom: 5px solid rgb(126, 51, 126);
+}
+
+.borderRight {
+  border-right: 5px solid rgb(126, 51, 126);
+}
+
+.square button {
+  font-size: 3em;
+}
+
+.right-side button {
+  height: 50px;
+  width: 150px;
+  margin: 50px 0 0 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #e3c5c5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  color: #343434;
+  font-weight: 700;
+}
+
+.right-side button:hover {
+  cursor: pointer;
+  background-color: #db7e7e;
+  color: black;
+}
+
+.right-side button::after {
+  cursor: pointer;
+  background-color: #db7e7e;
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    flex-direction: column;
+    width: 390px;
+  }
+
+  .left-side {
+    max-width: 76%;
+  }
+
+  .right-side {
+    max-width: 65%;
+    padding: 1px;
+  }
+  .board {
+    margin-left: -10px;
+  }
+
+  .select_h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20px;
+  }
+
+  .select_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .select_h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 40px;
+  }
+
+  .select_section select {
+    width: 30%;
+    height: 50px;
+    font-size: 2.5em;
+    margin-left: 35%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .select_section button {
+    width: 60%;
+    font-size: 2em;
+    text-align: center;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 75px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f1efcd;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .select_section button:hover {
+    color: #ffffff;
+    background-color: rgb(38, 99, 79);
+  }
+
+  .strike-row-1 {
+    width: 99%;
+    height: 4px;
+    top: 12%;
+  }
+
+  .strike-row-2 {
+    width: 99%;
+    height: 4px;
+    top: 37%;
+  }
+
+  .strike-row-3 {
+    width: 99%;
+    height: 4px;
+    top: 62%;
+  }
+
+  .strike-column-1 {
+    width: 4px;
+    height: 75%;
+    left: 16%;
+  }
+
+  .strike-column-2 {
+    width: 4px;
+    height: 75%;
+    left: 49%;
+  }
+
+  .strike-column-3 {
+    width: 4px;
+    height: 75%;
+    left: 83%;
+  }
+
+  .strike-diagonal-1 {
+    width: 95%;
+    height: 4px;
+    top: 37%;
+    left: 3%;
+    transform: skewY(45deg);
+  }
+
+  .strike-diagonal-2 {
+    width: 95%;
+    height: 4px;
+    top: 37%;
+    left: 3%;
+    transform: skewY(-45deg);
+  }
+}
